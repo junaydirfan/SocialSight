@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/SocialSight' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/SocialSight/' : '',
 }
 
 export default nextConfig
