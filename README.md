@@ -1,30 +1,100 @@
-# Next.js SocialSight App
+# SocialSight
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+SocialSight is a modern web application that allows users to preview how their images will appear across different social media platforms. Built with Next.js and TypeScript, it provides a sleek, responsive interface with dark mode support.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/junaydirfans-projects/v0-next-js-social-sight-app)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/TweJKv6Cfpj)
+## Features
 
-## Overview
+- 🖼️ **Image Upload**: Drag and drop or click to upload images (PNG, JPG, GIF)
+- 🌓 **Dark Mode**: Toggle between light and dark themes
+- 📱 **Multi-Platform Previews**: See how your image looks on:
+  - YouTube
+  - Facebook
+  - Instagram
+  - Twitter
+  - Reddit
+- 🎨 **Modern UI**: Clean, responsive design with smooth animations
+- 🔄 **Real-time Preview**: Instant updates as you switch between platforms
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Tech Stack
 
-## Deployment
+- **Framework**: Next.js 15.2.4
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI
+- **Icons**: Lucide React
+- **State Management**: React Hooks
+- **Form Handling**: React Hook Form
+- **Validation**: Zod
 
-Your project is live at:
+## Getting Started
 
-**[https://vercel.com/junaydirfans-projects/v0-next-js-social-sight-app](https://vercel.com/junaydirfans-projects/v0-next-js-social-sight-app)**
+### Prerequisites
 
-## Build your app
+- Node.js (v18 or higher)
+- pnpm (package manager)
 
-Continue building your app on:
+### Installation
 
-**[https://v0.dev/chat/projects/TweJKv6Cfpj](https://v0.dev/chat/projects/TweJKv6Cfpj)**
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/SocialSight.git
+cd SocialSight
+```
 
-## How It Works
+2. Install dependencies:
+```bash
+pnpm install
+```
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+3. Run the development server:
+```bash
+pnpm dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Building for Production
+
+To build the project for production:
+
+```bash
+pnpm build
+```
+
+To build for GitHub Pages deployment:
+
+```bash
+pnpm build:gh-pages
+```
+
+## Project Structure
+
+```
+SocialSight/
+├── app/
+│   ├── globals.css      # Global styles and Tailwind configuration
+│   ├── layout.tsx       # Root layout component
+│   └── page.tsx         # Main page component
+├── components/          # Reusable UI components
+├── public/             # Static assets
+└── styles/             # Additional styles
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- UI components from [Radix UI](https://www.radix-ui.com/)
+- Icons from [Lucide](https://lucide.dev/)
